@@ -7,12 +7,18 @@ This project is a JavaScript exercise done through the Code:You course.
 It demonstrates how to use callback functions to handle asynchronous operations in JavaScript.
 This program simulates a person completing their summer chores with the chance of getting tired and falling asleep before they finish.
 
-Overview - Promise Version
+Promise Version
 
 This version of the project replaces callback functions with promises. 
 Each chore is represented by a function that returns a promise.
 If they "fall asleep", the promise is rejected with an error message. 
 If it resolves successfully, it logs the result.
+
+Async/Await Version
+
+Each chore still returns a promise that resolves or rejects.
+The doSummerChores function instead uses await to stop at each until the promise is resolved. 
+If one fails, the catch block executes the error message. 
 
 Technologies Used
 
