@@ -34,7 +34,7 @@ function weedEat(person) {
 }
 
 //3. name & callback -> log "Name finished trimming the hedges" & call next (or log "Name fell asleep after weedeating the yard")
-function trimHedges(person, callback) {
+function trimHedges(person) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (fellAsleep()) {
@@ -48,7 +48,7 @@ function trimHedges(person, callback) {
 }
 
 //4. name & callback -> log "Name finished collecting the wood" & call next (or log "Name fell asleep after trimming the hedges")
-function collectWood(person, callback) {
+function collectWood(person) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (fellAsleep()) {
@@ -62,7 +62,7 @@ function collectWood(person, callback) {
 }
 
 //5. name & callback -> log "Name finished watering the garden" & call next (or log "Name fell asleep after collecting the wood")
-function waterGarden(person, callback) {
+function waterGarden(person) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (fellAsleep()) {
